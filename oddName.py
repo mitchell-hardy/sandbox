@@ -19,9 +19,6 @@ def get_name():
         else:
             valid_name = True
 
-
-
-
     return name
 
 main()
