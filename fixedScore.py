@@ -3,7 +3,7 @@ __author__ = 'Mitch Hardy'
 
 def main():#Calculate score and provide assessment to user
 
-    score = float(input("Enter score: "))
+    score = get_score()
     while score < 0 or score > 100:
         print("Invalid Option")
         score = float(input("Enter score: "))
@@ -15,5 +15,8 @@ def main():#Calculate score and provide assessment to user
         print("Excellent")
 
 
+def get_score():
+    user_score = float(input("Enter score: "))
+    return user_score
 
 main()
